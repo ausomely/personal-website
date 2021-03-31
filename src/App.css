@@ -3,18 +3,18 @@
 /* FONT */
 
 :root {
-   --page-font: 'Harmattan', 'Source Serif Pro', 'Roboto Slab';   
+  --page-font: 'Harmattan', 'Source Serif Pro', 'Roboto Slab';   
 }
 
 /* COLORS */ 
 
 :root {
-   --accent-color: #d4af37; 
-   --accent-opaque-color: #dec266;  
-   --text-color: #000000; 
-   --secondary-text-color: #ffffff;
-   --body-dark: #121212;
-   --body-light: #f0f0f0; 
+	--accent-color: #d4af37; 
+	--accent-opaque-color: #dec266;  
+  --text-color: #000000; 
+  --secondary-text-color: #ffffff;
+  --body-dark: #121212;
+  --body-light: #f0f0f0; 
 }
 
 /* SIZING 
@@ -23,16 +23,84 @@
 
 }                   */
 
-/* ANIMATIONS 
+/* ANIMATIONS */
 :root {
+  --title-enter-time: 1.3s;
+  --description-enter-time: 1s;
+  --navbar-delay-time: 1.3s;
+  
+}                    
 
-}                   */ 
+#root {
+
+}
 
 .hidden > * {
-   opacity: 0;
+  opacity: 0;
+}
+
+.fade-slide-up > * {
+  animation: fade-enter-up ease var(--reveal-duration) var(--reveal-delay);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+.fade-slide-right > * {
+  animation: fade-enter-right ease var(--reveal-duration) var(--reveal-delay);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+.fade-slide-left > * {
+  animation: fade-enter-left var(--reveal-duration) var(--reveal-delay);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+.fade-enter {
+  animation: fadeIn ease 0.5s;
 }
 
 
+/* KEYFRAMES */ 
+@keyframes fade-enter-up{
+  0% {
+    opacity:0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes fade-enter-right{
+  0% {
+    opacity:0;
+    transform: translateX(-5vw);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
 
-/* KEYFRAMES up, down, from right, from left */ 
+@keyframes fade-enter-left{
+  0% {
+    opacity:0;
+    transform: translateX(5vw);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+.App, body, #root {
+  position: relative;
+  z-index: -1;
+  font-family: var(--page-font);
+}

@@ -1,8 +1,11 @@
-import React from 'react'; 
+import './App.css';
+import Navbar from './components/navbar.js';
 
 export default function App() {
 
   return (
-    <div>Hello </div>
+    <div> 
+      <Navbar/>
+    </div>
   );
 }
