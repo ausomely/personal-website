@@ -1,34 +1,36 @@
-/* GLOBAL */ 
+/* Root Variables*/ 
 
-/* FONT */
+/* Font */
 
 :root {
   --page-font: 'Harmattan', 'Source Serif Pro', 'Roboto Slab';   
 }
 
-/* COLORS */ 
+/* Colors */ 
 
 :root {
-	--accent-color: #d4af37; 
-	--accent-opaque-color: #dec266;  
+	--color-accent: #d4af37; 
+	--color-accent-opaque: #dec266;  
   --text-color: #000000; 
   --secondary-text-color: #ffffff;
-  --body-dark: #121212;
-  --body-light: #f0f0f0; 
+  --dark-bg: #121212;
+  --light-bg: #f0f0f0; 
 }
 
-/* SIZING 
+/* Sizing */
 
 :root {
+  --section-max-size: 80vw;
+}               
 
-}                   */
-
-/* ANIMATIONS */
+/* Animations */
 :root {
-  --title-enter-time: 1.3s;
-  --description-enter-time: 1s;
-  --navbar-delay-time: 1.3s;
-  
+  --title-enter-time: 1s;
+  --content-enter-time: 1s;
+  --navbar-delay-time: 1.5s;
+  --navbar-animation-time: 1s;
+  --reveal-time: 1s;
+  --reveal-offset: 0.3s;
 }                    
 
 #root {
@@ -40,32 +42,32 @@
 }
 
 .fade-slide-up > * {
-  animation: fade-enter-up ease var(--reveal-duration) var(--reveal-delay);
+  animation: fade-enter-up ease var(--reveal-time) var(--reveal-offset);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
   -moz-fill-mode: forwards;
 }
 
 .fade-slide-right > * {
-  animation: fade-enter-right ease var(--reveal-duration) var(--reveal-delay);
+  animation: fade-enter-right ease var(--reveal-time) var(--reveal-offset);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
   -moz-fill-mode: forwards;
 }
 
 .fade-slide-left > * {
-  animation: fade-enter-left var(--reveal-duration) var(--reveal-delay);
+  animation: fade-enter-left var(--reveal-time) var(--reveal-offset);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
   -moz-fill-mode: forwards;
 }
 
 .fade-enter {
-  animation: fadeIn ease 0.5s;
+  animation: fade-in ease 0.5s;
 }
 
 
-/* KEYFRAMES */ 
+/* Keyframes */ 
 @keyframes fade-enter-up{
   0% {
     opacity:0;
@@ -99,8 +101,128 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .App, body, #root {
   position: relative;
   z-index: -1;
   font-family: var(--page-font);
+  background-color:var(--dark-bg);
 }
+
+/* .section {
+
+}           */
+
+.section-header {
+  margin: 0;
+  font-size: 
+}
+
+.user-select-none {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Navbar */
+
+.element-container {
+  margin: 2em 6em 0 auto;
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100vw;
+  background-color: transparent;
+  transform: translateY(-5em);
+  transition: 0 0.2s;
+  z-index: 1000;
+  animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
+  -webkit-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
+  -moz-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
+  /* delay animation */
+  animation-delay: var(--navbar-animation-delay);
+  -webkit-animation-delay: var(--navbar-animation-delay);
+  -moz-animation-delay: var(--navbar-animation-delay);
+  /* maintain animation styles after completion*/
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+.navbar-element {
+  font-size: 1.5em;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  
+}
+.navbar-element:hover {
+  color: var(--color-accent);
+  transition: 0.5s;
+}
+
+@keyframes navbar-slide-down {
+  0% {
+    transform: translateY(-5em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Home Screen */
+
+.home-container-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-container {
+  margin: 20% 0 0 5%;
+  width: 60vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;  
+}
+
+.home-title {
+  font-family: 'Source Serif Pro';
+  font-size: 7em;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
+  -moz-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
+}
+
+.connect-btn {
+
+}
+
+span {
+  color: var(--color-accent);
+}
+
+
+@keyframes slide-across-from-left {
+  0% {
+    transform: translateX(-5em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
