@@ -191,14 +191,18 @@
 }
 
 .home-container {
-  margin: 20% 0 0 5%;
-  width: 60vw;
+  width: 45vw;
+  top: 20%;
+  left: 6%;
   position: relative;
   display: flex;
+  align-items: flex-end;
   flex-direction: row;  
 }
 
 .home-title {
+  width: 25vw;
+
   font-family: 'Source Serif Pro';
   font-size: 7em;
   font-weight: 500;
@@ -226,3 +230,8 @@ span {
   }
 }
 
+.box {
+  width: 200px;
+  height: 60px;
+  background-color: teal;
+}
