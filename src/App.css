@@ -43,7 +43,7 @@
   opacity: 0;
 }
 
-.fade-slide-up > * {
+.fade-slide-right > * {
   animation: fade-enter-up ease var(--reveal-time) var(--reveal-offset);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
@@ -135,11 +135,23 @@
   -moz-user-select: none;
 }
 
+/* Main Logo */
+
+.main-icon {
+  top: 2%;
+  left: 15%;
+  position: absolute;
+  z-index: 2;
+
+}
+
 /* Navbar */
 
 .element-container {
-  margin: 2em 6em 0 auto;
+  margin: 3em 25em 0 auto;
   width: 35vw;
+  position: relative;
+  z-index: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -150,8 +162,8 @@
   width: 100vw;
   background-color: transparent;
   transform: translateY(-5em);
-  transition: 0 0.2s;
-  z-index: 1000;
+  transition: 0.2s;
+  z-index: 1;
   top: 0;
   position: fixed;
   animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
@@ -171,6 +183,7 @@
   font-size: 1.5em;
   color: var(--secondary-text-color);
   cursor: pointer;
+  text-decoration: none;
   
 }
 .navbar-element:hover {
@@ -197,7 +210,7 @@
 .home-container {
   width: 45vw;
   top: 30%;
-  left: 6%;
+  left: 15%;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -210,9 +223,9 @@
   font-size: 7em;
   font-weight: 500;
   color: var(--secondary-text-color);
-  animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
-  -webkit-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
-  -moz-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
+  animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
+  -moz-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
   -moz-fill-mode: forwards;
@@ -222,7 +235,7 @@ span {
   color: var(--color-accent);
 }
 
-@keyframes slide-across-from-left {
+@keyframes slide-right {
   0% {
     transform: translateX(-5em);
   }
@@ -236,8 +249,8 @@ span {
   right: 30%;
   position: absolute;
   transform: translateX(-1000em);
-  animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
-  -webkit-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  animation: fade-in ease 2s, slide-right ease var(--connect-icon-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-right ease var(--connect-icon-enter-time);
   -moz-animation: fade-in ease 2s, slide-yp ease var(--connect-icon-enter-time);
   animation-delay: var(--connect-icon-delay-time);
   -webkit-animation-delay: var(--connect-icon-delay-time);
@@ -258,12 +271,12 @@ span {
   fill: var(--text-color);
 }
 
-@keyframes slide-up {
+@keyframes slide-right {
   0% {
-    transform: translateY(5em);
+    transform: translateX(-5em);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
