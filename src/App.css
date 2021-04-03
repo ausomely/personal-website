@@ -31,6 +31,8 @@
   --navbar-animation-time: 1s;
   --reveal-time: 1s;
   --reveal-offset: 0.3s;
+  --connect-icon-enter-time: 1s;
+  --connect-icon-delay-time: 1.5s;
 }                    
 
 #root {
@@ -156,9 +158,9 @@
   -webkit-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
   -moz-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
   /* delay animation */
-  animation-delay: var(--navbar-animation-delay);
-  -webkit-animation-delay: var(--navbar-animation-delay);
-  -moz-animation-delay: var(--navbar-animation-delay);
+  animation-delay: var(--navbar-delay-time);
+  -webkit-animation-delay: var(--navbar-delay-time);
+  -moz-animation-delay: var(--navbar-delay-time);
   /* maintain animation styles after completion*/
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
@@ -193,8 +195,8 @@
 }
 
 .home-container {
-  width: 60vw;
-  top: 20%;
+  width: 45vw;
+  top: 30%;
   left: 6%;
   position: relative;
   display: flex;
@@ -203,7 +205,7 @@
 }
 
 .home-title {
-  width: 40vw;
+  width: 20vw;
   font-family: 'Source Serif Pro';
   font-size: 7em;
   font-weight: 500;
@@ -211,16 +213,14 @@
   animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
   -webkit-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
   -moz-animation: fade-in ease 2s, slide-across-from-left ease var(--title-enter-time);
-}
-
-.connect-btn {
-
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
 }
 
 span {
   color: var(--color-accent);
 }
-
 
 @keyframes slide-across-from-left {
   0% {
@@ -231,11 +231,39 @@ span {
   }
 }
 
-.box {
-  margin-bottom: 1.5em;
-  width: 200px;
-  height: 60px;
-  background-color: teal;
-  
-  
+.connect-icon {
+  margin-bottom: 1em;
+  right: 30%;
+  position: absolute;
+  transform: translateX(-1000em);
+  animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  -moz-animation: fade-in ease 2s, slide-yp ease var(--connect-icon-enter-time);
+  animation-delay: var(--connect-icon-delay-time);
+  -webkit-animation-delay: var(--connect-icon-delay-time);
+  -moz-animation-delay: var(--connect-icon-delay-time);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
 }
+
+.connect-icon-svg {
+  transition: fill 2s ease-in-out; /* Not working?? */
+}
+
+.connect-icon-svg:hover {
+  fill: var(--color-accent);
+}
+.connect-icon-svg:hover path{
+  fill: var(--text-color);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(5em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
