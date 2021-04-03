@@ -1,15 +1,10 @@
 import React from 'react';
 
-
-
-
-
-
 export default class Logo extends React.Component {
 
     render() {
         return(
-            <a className='main-icon' href='http://localhost:3000/'>
+            <a id='main-icon' href='http://localhost:3000/'>
                 <svg  width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="39.0325" y="39.9797" width="14.1421" height="1.69706" transform="rotate(-45 39.0325 39.9797)" fill="white"/>
                     <path d="M28.85 50.1619L38.85 40.1619L40.05 41.3619L30.05 51.3619L28.85 50.1619Z" fill="white"/>

@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Home() {
     return(
-        <div className='home-container-wrapper'>
-            <div className='home-container'>
-                <h1 className='home-title user-select-none'>Jackie <span>Au</span></h1>
+        <div id='home-container-wrapper'>
+            <div id='home-container'>
+                <h1 className='user-select-none' id='home-title'>Jackie <span>Au</span></h1>
                 <div className='connect-icon'>
                     <svg className='connect-icon-svg' width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="199" height="59" stroke="#D4AF37"/>

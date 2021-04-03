@@ -7,8 +7,8 @@ export default class Navbar extends React.Component {
     render(){
         return(
             <div>
-                <div className='navbar-container'>
-                    <div className='element-container user-select-none'>
+                <div id='navbar-container'>
+                    <div className='user-select none' id='element-container'>
                         <div className='navbar-element'>ABOUT</div>
                         <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
                         <div className='navbar-element'>SKILLS</div>
