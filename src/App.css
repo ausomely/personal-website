@@ -43,7 +43,7 @@
   opacity: 0;
 }
 
-.fade-slide-right > * {
+.fade-slide-up > * {
   animation: fade-enter-up ease var(--reveal-time) var(--reveal-offset);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
@@ -260,6 +260,7 @@ span {
 
 .connect-icon-svg {
   transition: fill 2s ease-in-out; /* Not working?? */
+  cursor: pointer;
 }
 
 .connect-icon-svg:hover {
@@ -267,6 +268,15 @@ span {
 }
 .connect-icon-svg:hover path{
   fill: var(--text-color);
+}
+/* ??? */
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-right {
@@ -281,27 +291,61 @@ span {
 /* About */
 
 #about-container-wrapper {
-  height: 50vh;
+  height: 60vh;
   background-color: var(--light-bg);
   display: flex;
 }
 
 #about-container {
-  width: 50vw;
+  width: 55vw;
+  top: 15%;
+  left: 15%;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
 
 }
 
+#about-content {
+  width: 45vw;
+  left: 5%;
+  position: relative;
+}
+
 #about-header {
+  margin-bottom: 1.5vh;
   font-family: 'Source Serif Pro';
   font-size: 4em;
   font-weight: 400;
   color: var(--text-color);
-  
 }
 
-.about-content {
+#about-paragraph {
+  width: 40vw;
   font-family: 'Roboto Slab';
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+
+#about-picture {
+  border-radius: 1.5em;
+  width: 15vw;
+  height: 20vw;
+}
+
+#download-resume {
+  margin-top: 1.5vh;
+  position: absolute;
+  left: 35%;
+  cursor: pointer;
+}
+
+#download-resume:hover {
+  fill: var(--dark-bg);
+}
+
+#download-resume:hover path {
+  fill: var(--color-accent);
 }

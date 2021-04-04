@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Home() {
+    
     return(
         <div id='home-container-wrapper'>
             <div id='home-container'>
