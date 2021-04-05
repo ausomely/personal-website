@@ -5,7 +5,7 @@ import SkillElement from './skill_element';
 
 export default function Skills() {
     return(
-        <div id='skills-container-wrapper'>
+        <div className='user-select-none' id='skills-container-wrapper'>
             <div id='skills-container'>
                 <div id='skills-header'>Skills</div>
                 <div id='skills-map'>

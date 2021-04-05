@@ -4,9 +4,9 @@ import resume from '../resume/JACKIE_AU_PLAIN.pdf';
 export default function About() {
 
     return(
-        <div id='about-container-wrapper'>
+        <div className='user-select-none' id='about-container-wrapper'>
             <div id='about-container'>
-                <img id='about-picture' src={profilePic}/>
+                <img id='about-picture' draggable='false' src={profilePic}/>
                 <div id='about-content'>
                     <h1 id='about-header'>Thanks for stopping by.</h1>
                     <p id='about-paragraph'>I&#39;m a recent UC Davis 
