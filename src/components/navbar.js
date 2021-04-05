@@ -32,7 +32,7 @@ export default class Navbar extends Component {
                     <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
                     <Link
                         activeClass='active'
-                        to='skills-section'
+                        to='skills-container-wrapper'
                         spy={true}
                         smooth={true}
                         offset={-70}

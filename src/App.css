@@ -356,23 +356,26 @@ span {
 #skills-container-wrapper {
   display: flex;
   flex-direction: column;
+  
 }
 
 #skills-container {
   width: 100vw;
-  height: 35vh;
-  
+  height: 50vh;
+  background-color: var(--dark-bg);
 }
 
-
 #skills-header {
-  color: var(--secondary-text-color);
+  margin: 0 0 5vw 30vh;
+  padding-top: 0.5em;
   font-family: 'Source Serif Pro';
-  font-size: 4em;
+  font-size: 5em;
+  color: var(--secondary-text-color);
 }
 
 #skills-map {
-  margin: auto;
+  width: 70vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -383,12 +386,27 @@ span {
 .skills-icon {
   width: 5vw;
   height: 5vw;
+  padding: 0.5em;
+  background-color: #000000;
+  border-radius: 1em;
   color: var(--secondary-text-color);
 }
 
 .skills-name {
   font-family: 'Roboto Slab';
   font-size: 1.5em;
+  font-weight: 500;
+  padding-top: 0.5em;
+  text-align: center;
   color:var(--secondary-text-color); 
 }
 
+.skills-icon:hover {
+  color: var(--color-accent);
+  transition: 0.3s;
+}
+
+.skills-icon:hover + .skills-name {
+  color: var(--color-accent);
+  transition: 0.3s;
+}
