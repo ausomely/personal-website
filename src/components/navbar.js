@@ -1,19 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
 import resume from '../resume/JACKIE_AU_PLAIN.pdf';
+import { Link } from 'react-scroll';
 
-// TODO:: on click handler
+var prevPageOffset = window.pageYOffset;
+window.onscroll = function() {
+    var currentPageOffset = window.pageYOffset;
+    if(prevPageOffset > currentPageOffset) {
+        document.getElementById('navbar-container').style.top = '0';
+    } else {
+        document.getElementById('navbar-container').style.top = '-5em';
+    }
+    prevPageOffset = currentPageOffset;
+};
 
-export default class Navbar extends React.Component {
+export default class Navbar extends Component {
+
     render(){
         return(
             <div>
                 <div id='navbar-container'>
                     <div className='user-select none' id='element-container'>
-                        <div className='navbar-element'>ABOUT</div>
+                        <Link
+                            activeClass='active'
+                            to='about-container-wrapper'
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                            <div className='navbar-element'>ABOUT</div>
+                        </Link>
                         <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
-                        <div className='navbar-element'>SKILLS</div>
-                        <div className='navbar-element'>PORTFOLIO</div>
-                        <div className='navbar-element'>CONTACT</div>
+                        <Link
+                            activeClass='active'
+                            to='skills-section'
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                            <div className='navbar-element'>SKILLS</div>
+                        </Link>
+                        <Link
+                            activeClass='active'
+                            to='portfolio-section'
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                            <div className='navbar-element'>PORTFOLIO</div>
+                        </Link>
+                        <Link
+                            activeClass='active'
+                            to='contact-section'
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                            <div className='navbar-element'>CONTACT</div>
+                        </Link>
                     </div>
                 </div>
             </div>
