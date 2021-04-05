@@ -1,4 +1,4 @@
-import { FaJsSquare, FaCss3Alt, FaHtml5, FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
+import { FaJsSquare, FaCss3Alt, FaHtml5, FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 
 const skill_list = [
     {

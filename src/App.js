@@ -1,9 +1,10 @@
 import './App.css';
 import React from 'react';
-import Logo from './components/logo.js';
-import Navbar from './components/navbar.js';
-import Home from './components/home.js';
-import About from './components/about.js';
+import Logo from './components/logo';
+import Navbar from './components/navbar';
+import Home from './components/home';
+import About from './components/about';
+import Skills from './components/skills';
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
             <Navbar/>
             <Home/>
             <About/>
+            <Skills/>
         </div>
     );
 }

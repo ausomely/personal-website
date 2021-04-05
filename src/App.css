@@ -298,6 +298,7 @@ span {
 
 #about-container {
   width: 55vw;
+  height: 40vh;
   top: 15%;
   left: 15%;
   position: relative;
@@ -348,5 +349,46 @@ span {
 
 #download-resume:hover path {
   fill: var(--color-accent);
+}
+
+/* Skills */ 
+
+#skills-container-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills-container {
+  width: 100vw;
+  height: 35vh;
+  
+}
+
+
+#skills-header {
+  color: var(--secondary-text-color);
+  font-family: 'Source Serif Pro';
+  font-size: 4em;
+}
+
+#skills-map {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-icon {
+  width: 5vw;
+  height: 5vw;
+  color: var(--secondary-text-color);
+}
+
+.skills-name {
+  font-family: 'Roboto Slab';
+  font-size: 1.5em;
+  color:var(--secondary-text-color); 
 }
 

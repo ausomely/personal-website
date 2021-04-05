@@ -17,51 +17,49 @@ export default class Navbar extends Component {
 
     render(){
         return(
-            <div>
-                <div id='navbar-container'>
-                    <div className='user-select none' id='element-container'>
-                        <Link
-                            activeClass='active'
-                            to='about-container-wrapper'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div className='navbar-element'>ABOUT</div>
-                        </Link>
-                        <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
-                        <Link
-                            activeClass='active'
-                            to='skills-section'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div className='navbar-element'>SKILLS</div>
-                        </Link>
-                        <Link
-                            activeClass='active'
-                            to='portfolio-section'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div className='navbar-element'>PORTFOLIO</div>
-                        </Link>
-                        <Link
-                            activeClass='active'
-                            to='contact-section'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div className='navbar-element'>CONTACT</div>
-                        </Link>
-                    </div>
+            <div id='navbar-container'>
+                <div className='user-select-none' id='element-container'>
+                    <Link
+                        activeClass='active'
+                        to='about-container-wrapper'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className='navbar-element'>ABOUT</div>
+                    </Link>
+                    <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
+                    <Link
+                        activeClass='active'
+                        to='skills-section'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className='navbar-element'>SKILLS</div>
+                    </Link>
+                    <Link
+                        activeClass='active'
+                        to='portfolio-section'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className='navbar-element'>PORTFOLIO</div>
+                    </Link>
+                    <Link
+                        activeClass='active'
+                        to='contact-section'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className='navbar-element'>CONTACT</div>
+                    </Link>
                 </div>
             </div>
         );

@@ -15,8 +15,7 @@ export default function About() {
                     cooking, and playing video games.
                     <br/>
                     <br/>
-                    If you would like to help me on my journey of maturing
-                    and improving my skills, feel free to reach out to me. Here&#39;s my
+                    Join me on my journey of refining and improving my skills, feel free to reach out to me. Here&#39;s my
                     resume! 
                     </p> 
                     <a href={resume} download>
