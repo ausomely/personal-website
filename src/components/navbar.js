@@ -29,7 +29,8 @@ export default class Navbar extends Component {
                     >
                         <div className='navbar-element'>ABOUT</div>
                     </Link>
-                    <a className='navbar-element' href = {resume} target='_blank' rel='noreferrer'>RESUME</a>
+                    <a className='navbar-element' href = {resume} 
+                        target='_blank' rel='noreferrer'>RESUME</a>
                     <Link
                         activeClass='active'
                         to='skills-container-wrapper'

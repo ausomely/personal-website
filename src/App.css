@@ -27,10 +27,12 @@
 :root {
   --title-enter-time: 1s;
   --content-enter-time: 1s;
+  --navbar-enter-time: 1s;
   --navbar-delay-time: 1.5s;
-  --navbar-animation-time: 1s;
   --reveal-time: 1s;
   --reveal-offset: 0.3s;
+  --main-icon-enter-time: 1s;
+  --main-icon-delay-time: 1.5s;
   --connect-icon-enter-time: 1s;
   --connect-icon-delay-time: 1.5s;
 }                    
@@ -142,6 +144,16 @@
   left: 15%;
   position: absolute;
   z-index: 2;
+  transform: translateX(-1000em);
+  animation: fade-in ease 2s, slide-up ease var(--main-icon-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-up ease var(--main-icon-enter-time);
+  -moz-animation: fade-in ease 2s, slide-up ease var(--main-icon-enter-time);
+  animation-delay: var(--main-icon-delay-time);
+  -webkit-animation-delay: var(--main-icon-delay-time);
+  -moz-animation-delay: var(--main-icon-delay-time);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
 
 }
 
@@ -166,9 +178,9 @@
   z-index: 1;
   top: 0;
   position: fixed;
-  animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
-  -webkit-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
-  -moz-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-animation-time);
+  animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
+  -webkit-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
+  -moz-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
   animation-delay: var(--navbar-delay-time);
   -webkit-animation-delay: var(--navbar-delay-time);
   -moz-animation-delay: var(--navbar-delay-time);
@@ -220,7 +232,7 @@
   font-family: 'Source Serif Pro';
   font-size: 7em;
   font-weight: 500;
-  color: var(--secondary-text-color);
+  color: var(--secondary-text-color); 
   animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
   -webkit-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
   -moz-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
@@ -243,13 +255,13 @@ span {
 }
 
 .connect-icon {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   right: 30%;
   position: absolute;
   transform: translateX(-1000em);
-  animation: fade-in ease 2s, slide-right ease var(--connect-icon-enter-time);
-  -webkit-animation: fade-in ease 2s, slide-right ease var(--connect-icon-enter-time);
-  -moz-animation: fade-in ease 2s, slide-yp ease var(--connect-icon-enter-time);
+  animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  -webkit-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  -moz-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
   animation-delay: var(--connect-icon-delay-time);
   -webkit-animation-delay: var(--connect-icon-delay-time);
   -moz-animation-delay: var(--connect-icon-delay-time);
@@ -279,12 +291,12 @@ span {
   }
 }
 
-@keyframes slide-right {
+@keyframes slide-up {
   0% {
-    transform: translateX(-5em);
+    transform: translateY(5em);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
