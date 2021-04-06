@@ -14,7 +14,7 @@
   --text-color: #000000; 
   --secondary-text-color: #ffffff;
   --dark-bg: #121212;
-  --light-bg: #f0f0f0; 
+  --light-bg: #464B52; 
 }
 
 /* Sizing */
@@ -304,7 +304,7 @@ span {
 
 #about-container-wrapper {
   height: 60vh;
-  background-color: var(--light-bg);
+  background-color:var(--light-bg);
   display: flex;
 }
 
@@ -434,31 +434,68 @@ span {
   background-color: var(--light-bg);
 }
 
+#projects-map {
+  width: 20vw;
+  left: 30%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 2vw;
+  row-gap: 2vw;
+}
+
 #portfolio-container {
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
 }
 
 #portfolio-header {
-  margin: 0 0 5vw 80vh;
+  margin-bottom: 0.5em;
   padding-top: 0.5em;
   font-family: 'Source Serif Pro';
   font-size: 5em;
+  text-align: center;
   color: var(--text-color);
 }
 
+.project-element a {
+  color: inherit;
+  text-decoration: inherit; 
+}
 .project-element {
-  
+  width: 20vw;
+  height: 25vh;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.project-cover {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-name {
-
-}
+  width: 20vw;
+  opacity: 1;
+  color: var(--secondary-text-color);
+  font-size: 1.5em;
+  font-weight: 500;
+} 
 
 .project-description {
-
-}
-
-#portfolio-map {
-
+  opacity: 0;
+  width: 15vw;
+  color: var(--secondary-text-color);
+  font-size: 1.1em;
+  margin: 1vh 0 0 0
 }

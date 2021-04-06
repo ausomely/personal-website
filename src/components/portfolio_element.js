@@ -14,9 +14,12 @@ export default class PortfolioElement extends Component {
         return (
             <div className='project-element' style={ {backgroundImage: 
                 'url(' + img + ')'} }>
-                <a href={url} target='_blank' rel='noreferrer'></a>
-                <div className='project-name'>{name}</div>
-                <p className='project-description'>{description}</p>
+                <a href={url} target='_blank' rel='noreferrer'>
+                    <div className='project-cover'>
+                        <div className='project-name'>{name}</div>
+                        <p className='project-description'>{description}</p>
+                    </div>
+                </a>
             </div>
         );
     }    

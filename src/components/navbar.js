@@ -24,8 +24,8 @@ export default class Navbar extends Component {
                         to='about-container-wrapper'
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
+                        offset={-50}
+                        duration={700}
                     >
                         <div className='navbar-element'>ABOUT</div>
                     </Link>
@@ -36,18 +36,18 @@ export default class Navbar extends Component {
                         to='skills-container-wrapper'
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
+                        offset={-50}
+                        duration={700}
                     >
                         <div className='navbar-element'>SKILLS</div>
                     </Link>
                     <Link
                         activeClass='active'
-                        to='portfolio-section'
+                        to='portfolio-container-wrapper'
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
+                        offset={-50}
+                        duration={700}
                     >
                         <div className='navbar-element'>PORTFOLIO</div>
                     </Link>
@@ -56,8 +56,8 @@ export default class Navbar extends Component {
                         to='contact-section'
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
+                        offset={-50}
+                        duration={700}
                     >
                         <div className='navbar-element'>CONTACT</div>
                     </Link>

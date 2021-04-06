@@ -7,11 +7,12 @@ export default function Portfolio() {
         <div id='portfolio-container-wrapper'>
             <div id='portfolio-container'>
                 <div id='portfolio-header'>Portfolio</div>
-                <div id='portfolio-map'>
+                <div id='projects-map'>
                     {
                         portfolio_list.map((project, index) => {
-                            return <PortfolioElement key={project.name} 
-                                name={project.name} img={project.img_src} url={project.url_link} />;
+                            return <PortfolioElement key={index} 
+                                name={project.name} description={project.description} 
+                                img={project.img_src} url={project.url_link} />;
                         })
                     }
                 </div>
