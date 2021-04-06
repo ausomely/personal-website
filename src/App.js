@@ -5,6 +5,8 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
+import Portfolio from './components/portfolio';
+
 
 
 export default function App() {
@@ -16,6 +18,7 @@ export default function App() {
             <Home/>
             <About/>
             <Skills/>
+            <Portfolio/>
         </div>
     );
 }

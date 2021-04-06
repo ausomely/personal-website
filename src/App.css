@@ -383,7 +383,7 @@ span {
 }
 
 #skills-header {
-  margin: 0 0 5vw 30vh;
+  margin: 0 0 5vw 25vh;
   padding-top: 0.5em;
   font-family: 'Source Serif Pro';
   font-size: 5em;
@@ -430,3 +430,35 @@ span {
 
 /* Portfolio */ 
 
+#portfolio-container-wrapper {
+  background-color: var(--light-bg);
+}
+
+#portfolio-container {
+  width: 100vw;
+  height: 60vh;
+}
+
+#portfolio-header {
+  margin: 0 0 5vw 80vh;
+  padding-top: 0.5em;
+  font-family: 'Source Serif Pro';
+  font-size: 5em;
+  color: var(--text-color);
+}
+
+.project-element {
+  
+}
+
+.project-name {
+
+}
+
+.project-description {
+
+}
+
+#portfolio-map {
+
+}
