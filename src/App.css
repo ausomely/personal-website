@@ -326,7 +326,7 @@ span {
 
 #about-container-wrapper {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-color:var(--light-bg);
 }
 
@@ -359,7 +359,7 @@ span {
 }
 
 #about-picture {
-  width: 70em;
+  width: 60em;
   left: 15%;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -379,7 +379,7 @@ span {
 }
 
 #download-resume {
-  display: inline-block;
+  padding-top: 1em;
   position: relative;
   cursor: pointer;
 }
@@ -395,14 +395,14 @@ span {
 /* Skills */ 
 
 #skills-container-wrapper {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   
 }
 
 #skills-container {
-  width: 100vw;
-  height: 50vh;
   background-color: var(--dark-bg);
 }
 
@@ -455,22 +455,24 @@ span {
 /* Portfolio */ 
 
 #portfolio-container-wrapper {
+  width: 100vw;
+  height: 100vh;
   background-color: var(--light-bg);
-}
-
-#projects-map {
-  width: 20vw;
-  left: 30%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 2vw;
-  row-gap: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 #portfolio-container {
+  display: flex; 
+}
+#projects-map {
   width: 100vw;
-  height: 80vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  left: 15%;
+  display: flex; 
+  flex-direction: row;
+  position: relative;
 }
 
 #portfolio-header {
@@ -487,12 +489,31 @@ span {
   text-decoration: inherit; 
 }
 .project-element {
-  width: 20vw;
-  height: 25vh;
+  margin-right: 2em;
+  width: 15vw;
+  height: 40vh;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border-radius: 1em;
+  position:relative;
   overflow: hidden;
+}
+
+.project-element:nth-child(2n) {
+  transform: translate(0, -60px);
+}
+
+.bottom-fade {
+  width: 100%; 
+  bottom: 0;
+  left: 0;
+  height: 70%;
+  position: absolute;
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.738) 19%,
+  rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%,
+   rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%,
+    rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%,
+     rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%,
+      rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, transparent 100%);
 }
 
 .project-cover {

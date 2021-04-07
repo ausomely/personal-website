@@ -19,6 +19,7 @@ export default class PortfolioElement extends Component {
                         <div className='project-name'>{name}</div>
                         <p className='project-description'>{description}</p>
                     </div>
+                    
                 </a>
             </div>
         );
