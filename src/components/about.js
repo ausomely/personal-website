@@ -10,12 +10,16 @@ export default function About() {
                 <div id='about-content'>
                     <h1 id='about-header'>Who I am.</h1>
                     <p id='about-paragraph'>
-                        I&#39;m a recent UC Davis computer science graduate whos passionate for front 
+                        I&#39;m a recent UC Davis computer science graduate who&#39;s passionate for front 
                         and back end development. Outside of coding, I enjoy hiking,
-                        cooking, and playing video games.
+                        cooking Chinese influenced dishes, and playing first person shooters.
                         <br/>
                         <br/>
-                        Join me on my journey of refining and improving my skills. Feel free to reach out to me.
+                        I&#39;m currently seeking for any opprotunity to start my career as a
+                        software developer so if you&#39;re hiring or have any resources feel free to reach out to me.
+                        <br/>
+                        <br/>
+                        Join me on my journey of refining and improving my skills.
                     </p> 
                     <a id='a-download' href={resume} target='_blank' rel='noreferrer'>
                         <svg id='download-resume' width="230" height="50" viewBox="0 0 230 50" fill="none" xmlns="http://www.w3.org/2000/svg">
