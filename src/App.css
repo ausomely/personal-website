@@ -11,8 +11,8 @@
 :root {
 	--color-accent: #d4af37; 
 	--color-accent-opaque: #dec266;  
-  --text-color: #000000; 
-  --secondary-text-color: #ffffff;
+  --text-color: #000; 
+  --secondary-text-color: #c5c3c1;
   --dark-bg: #121212;
   --light-bg: #464B52; 
 }
@@ -35,6 +35,8 @@
   --main-icon-delay-time: 1.5s;
   --connect-icon-enter-time: 1s;
   --connect-icon-delay-time: 1.5s;
+  --home-description-enter-time: 1s;
+  --home-description-delay-time: 1.5s;
 }                    
 
 #root {
@@ -140,7 +142,7 @@
 /* Main Logo */
 
 #main-icon {
-  top: 2%;
+  top: 1%;
   left: 15%;
   position: absolute;
   z-index: 2;
@@ -218,24 +220,44 @@
 }
 
 #home-container {
-  width: 45vw;
+  width: 25vw;
+  height: 25vh;
   top: 30%;
   left: 15%;
   position: relative;
   display: flex;
-  align-items: flex-end;
-  flex-direction: row;  
+  flex-direction: column;  
+  justify-content: space-evenly;
 }
 
 #home-title {
-  width: 20vw;
+  width: 25vw;
   font-family: 'Source Serif Pro';
-  font-size: 7em;
+  font-size: 8em;
   font-weight: 500;
   color: var(--secondary-text-color); 
-  animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
-  -webkit-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
-  -moz-animation: fade-in ease 2s, slide-right ease var(--title-enter-time);
+  animation: fade-in ease-in 1.3s, slide-right ease var(--title-enter-time);
+  -webkit-animation: fade-in ease-in 1.3s, slide-right ease var(--title-enter-time);
+  -moz-animation: fade-in ease-in 1.3s, slide-right ease var(--title-enter-time);
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+#home-description {
+  width: 20vw;
+  transform: translateX(-150em);
+  line-height: 1.5em;
+  font-family: 'Source Serif Pro';
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  animation: fade-in ease-in 1.3s, slide-right ease var(--home-description-enter-time);
+  -webkit-animation: fade-in ease-in 1.3s, slide-right ease var(--home-description-enter-time);
+  -moz-animation: fade-in ease-in 1.3s, slide-right ease var(--home-description-enter-time);
+  animation-delay: var(--home-description-delay-time);
+  -webkit-animation-delay: var(--home-description-delay-time);
+  -moz-animation-delay: var(--home-description-delay-time);
   animation-fill-mode: forwards;
   -webkit-fill-mode: forwards;
   -moz-fill-mode: forwards;
@@ -247,7 +269,7 @@ span {
 
 @keyframes slide-right {
   0% {
-    transform: translateX(-5em);
+    transform: translateX(-150px);
   }
   100% {
     transform: translateX(0);
@@ -255,13 +277,13 @@ span {
 }
 
 .connect-icon {
-  margin-bottom: 1.5em;
-  right: 30%;
-  position: absolute;
-  transform: translateX(-1000em);
-  animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
-  -webkit-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
-  -moz-animation: fade-in ease 2s, slide-up ease var(--connect-icon-enter-time);
+  /* margin-bottom: 1.5em; */
+  /* right: 30%;
+  position: absolute; */
+  transform: translateX(-150em);
+  animation: fade-in ease-in 1.3s, slide-right ease var(--connect-icon-enter-time);
+  -webkit-animation: fade-in ease-in 1.3s, slide-right ease var(--connect-icon-enter-time);
+  -moz-animation: fade-in ease-in 1.3s, slide-right ease var(--connect-icon-enter-time);
   animation-delay: var(--connect-icon-delay-time);
   -webkit-animation-delay: var(--connect-icon-delay-time);
   -moz-animation-delay: var(--connect-icon-delay-time);
@@ -271,7 +293,7 @@ span {
 }
 
 .connect-icon-svg {
-  transition: fill 2s ease-in-out; /* Not working?? */
+  transition: fill 2s ease-out; /* Not working?? */
   cursor: pointer;
 }
 
@@ -303,49 +325,44 @@ span {
 /* About */
 
 #about-container-wrapper {
-  height: 60vh;
+  width: 100vw;
+  height: 70vh;
   background-color:var(--light-bg);
-  display: flex;
 }
 
 #about-container {
-  width: 55vw;
-  height: 40vh;
-  top: 15%;
+  top: 10%;
   left: 15%;
   position: relative;
-  display: flex;
+  display: flex; 
   flex-direction: row;
-  justify-content: flex-start;
-
 }
 
 #about-content {
-  width: 45vw;
-  left: 5%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #about-header {
   margin-bottom: 1.5vh;
   font-family: 'Source Serif Pro';
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 400;
   color: var(--text-color);
 }
 
 #about-paragraph {
-  width: 40vw;
+  width: 25vw;
   font-family: 'Roboto Slab';
-  font-size: 1.3em;
-  line-height: 1.4em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
-
 #about-picture {
-  border-radius: 1.5em;
-  width: 15vw;
-  height: 20vw;
+  width: 70em;
+  left: 15%;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -353,10 +370,17 @@ span {
   -ms-user-select: none;
 }
 
-#download-resume {
+#a-download {
   margin-top: 1.5vh;
-  position: absolute;
-  left: 35%;
+  width: 267px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+#download-resume {
+  display: inline-block;
+  position: relative;
   cursor: pointer;
 }
 
@@ -418,7 +442,7 @@ span {
   color:var(--secondary-text-color); 
 }
 
-.skills-icon:hover {
+/* .skills-icon:hover {
   color: var(--color-accent);
   transition: 0.3s;
 }
@@ -426,7 +450,7 @@ span {
 .skills-icon:hover + .skills-name {
   color: var(--color-accent);
   transition: 0.3s;
-}
+} */
 
 /* Portfolio */ 
 

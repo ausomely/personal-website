@@ -7,7 +7,7 @@ export default function Skills() {
     return(
         <div className='user-select-none' id='skills-container-wrapper'>
             <div id='skills-container'>
-                <div id='skills-header'>Skills</div>
+                <div id='skills-header'>Skill Set</div>
                 <div id='skills-map'>
                     {
                         skill_list.map((skill, index) => {
