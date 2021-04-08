@@ -325,22 +325,28 @@ span {
 /* About */
 
 #about-container-wrapper {
-  width: 100vw;
-  height: 100vh;
+
   background-color:var(--light-bg);
 }
 
 #about-container {
-  top: 10%;
+  width: 100vw;
+  height: 100vh;
+  /* top: 10%;
   left: 15%;
-  position: relative;
+  position: relative; */
   display: flex; 
   flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+  
 }
 
 #about-content {
   display: flex;
   flex-direction: column;
+  margin-right: 25em;
 }
 
 #about-header {
@@ -352,16 +358,15 @@ span {
 }
 
 #about-paragraph {
-  width: 25vw;
+  width: 20vw;
   font-family: 'Roboto Slab';
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
 #about-picture {
-  width: 60em;
-  left: 15%;
-  position: relative;
+  width: 35vw;
+  height: 45vh;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   user-select: none;
   -moz-user-select: none;
@@ -465,11 +470,12 @@ span {
 #portfolio-container {
   display: flex; 
 }
+
 #projects-map {
   width: 100vw;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  left: 15%;
+  justify-content: center;
   display: flex; 
   flex-direction: row;
   position: relative;
@@ -493,6 +499,7 @@ span {
   width: 15vw;
   height: 40vh;
   background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position:relative;
   overflow: hidden;

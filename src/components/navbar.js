@@ -20,7 +20,6 @@ export default class Navbar extends Component {
             <div id='navbar-container'>
                 <div className='user-select-none' id='element-container'>
                     <Link
-                        activeClass='active'
                         to='about-container-wrapper'
                         spy={true}
                         smooth={true}
@@ -32,7 +31,6 @@ export default class Navbar extends Component {
                     <a className='navbar-element' href = {resume} 
                         target='_blank' rel='noreferrer'>RESUME</a>
                     <Link
-                        activeClass='active'
                         to='skills-container-wrapper'
                         spy={true}
                         smooth={true}
@@ -42,7 +40,6 @@ export default class Navbar extends Component {
                         <div className='navbar-element'>SKILLS</div>
                     </Link>
                     <Link
-                        activeClass='active'
                         to='portfolio-container-wrapper'
                         spy={true}
                         smooth={true}
@@ -52,7 +49,6 @@ export default class Navbar extends Component {
                         <div className='navbar-element'>PORTFOLIO</div>
                     </Link>
                     <Link
-                        activeClass='active'
                         to='contact-section'
                         spy={true}
                         smooth={true}

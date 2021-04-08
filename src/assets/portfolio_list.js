@@ -1,7 +1,7 @@
-import warcraft_img from '../images/game-room.png';
-import davis_deals_img from '../images/davis-deals.png';
-import pong_img from '../images/pong.png';
-import personal_site_img from '../images/personal-site.png';
+import warcraft_img from '../images/game-room-rs.png';
+import davis_deals_img from '../images/davis-deals-rs.png';
+import pong_img from '../images/pong-rs.png';
+import personal_site_img from '../images/personal-website.png';
 
 
 const portfolio_list = [

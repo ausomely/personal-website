@@ -1,5 +1,4 @@
 import React from 'react';
-import profilePic from '../images/meattopgolf.png';
 import me from '../images/me.jpg';
 import resume from '../resume/JACKIE_AU_PLAIN.pdf';
 export default function About() {
@@ -15,7 +14,7 @@ export default function About() {
                         cooking Chinese influenced dishes, and playing first person shooters.
                         <br/>
                         <br/>
-                        I&#39;m currently seeking for any opprotunity to start my career as a
+                        I&#39;m currently seeking for any opportunity to start my career as a
                         software developer so if you&#39;re hiring or have any resources feel free to reach out to me.
                         <br/>
                         <br/>
