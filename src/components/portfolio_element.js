@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 export default class PortfolioElement extends Component {
 
@@ -16,10 +17,12 @@ export default class PortfolioElement extends Component {
                 'url(' + img + ')'} }>
                 <a href={url} target='_blank' rel='noreferrer'>
                     <div className='project-cover'>
-                        <div className='project-name'>{name}</div>
-                        <p className='project-description'>{description}</p>
+                        <div className='project-content'>
+                            <div className='project-name'>{name}</div>
+                            <p className='project-description'>{description}</p>
+                        </div>
+                        <p className='visit-project'> Visit Project <FaLongArrowAltRight id='right-arrow' /></p>
                     </div>
-                    
                 </a>
             </div>
         );
