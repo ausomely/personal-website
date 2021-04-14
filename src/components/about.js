@@ -1,7 +1,10 @@
 import React from 'react';
 import me from '../images/me.jpg';
 import resume from '../resume/JACKIE_AU_PLAIN.pdf';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
+Aos.init();
 
 export default function About() {
 
