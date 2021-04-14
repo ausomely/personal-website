@@ -12,6 +12,6 @@ export default function SkillElement( { icon, name } ) {
 }
 
 SkillElement.propTypes = {
-    icon: PropTypes.IconType,
+    icon: PropTypes.any,
     name: PropTypes.string.isRequired
 };

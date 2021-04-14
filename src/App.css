@@ -518,6 +518,41 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
+.project-cover:hover {
+  transition: 0.2s;
+  opacity: 0.85;
+}
+
+.project-cover:hover .project-name {
+  animation: fade-in ease-in-out 0.4s, enter-up 0.4s ease;
+  -webkit-animation: fade-in ease-in-out 0.4s, enter-up 0.4s ease;
+  -moz-animation: fade-in ease-in-out 0.4s, enter-up 0.4s ease;
+}
+
+.project-cover:hover .project-description {
+  animation: fade-in 0.4s ease-in 0.3s;
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+.project-cover:hover .visit-project {
+  animation: fade-in 0.4s ease-in 0.3s;
+  animation-fill-mode: forwards;
+  -webkit-fill-mode: forwards;
+  -moz-fill-mode: forwards;
+}
+
+@keyframes enter-up {
+  0% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .project-content {
   margin-top: 5em;
 }
@@ -529,11 +564,11 @@ span {
   font-family: 'Harmattan';
   font-size: 2em;
   font-weight: 500;
-  
 } 
 
 .project-description {
   margin-top: 1vh;
+  opacity: 0;
   width: 10vw;
   color: var(--text-color);
   font-family: 'Roboto Slab';
@@ -543,6 +578,7 @@ span {
 
 .visit-project {
   margin-bottom: 1.5em;
+  opacity: 0;
   color: var(--text-color);
   font-size: 1em;
   font-family: 'Roboto Slab';
@@ -554,11 +590,9 @@ span {
   top: 15%;
   left: 1%;
 }
-.project-cover:hover {
-  transition: 0.2s;
-  opacity: 0.85;
-}
 
+
+/* Contact */ 
 
 #contact-container-wrapper {
   width: 100vw;
