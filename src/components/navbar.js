@@ -24,7 +24,7 @@ export default class Navbar extends Component {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}
+                        duration={1000}
                     >
                         <div className='navbar-element'>ABOUT</div>
                     </Link>
@@ -35,7 +35,7 @@ export default class Navbar extends Component {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}
+                        duration={1000}
                     >
                         <div className='navbar-element'>SKILLS</div>
                     </Link>
@@ -44,16 +44,16 @@ export default class Navbar extends Component {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}
+                        duration={1000}
                     >
                         <div className='navbar-element'>PORTFOLIO</div>
                     </Link>
                     <Link
-                        to='contact-section'
+                        to='contact-container-wrapper'
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}
+                        duration={1000}
                     >
                         <div className='navbar-element'>CONTACT</div>
                     </Link>

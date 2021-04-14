@@ -123,15 +123,6 @@
   background-color:var(--dark-bg);
 }
 
-/* .section {
-
-}           
-
-.section-header {
-  margin: 0;
-  font-size: 
-} */
-
 .user-select-none {
   user-select: none;
   -webkit-user-select: none;
@@ -276,10 +267,7 @@ span {
   }
 }
 
-.connect-icon {
-  /* margin-bottom: 1.5em; */
-  /* right: 30%;
-  position: absolute; */
+#connect-icon {
   transform: translateX(-150em);
   animation: fade-in ease-in 1.3s, slide-right ease var(--connect-icon-enter-time);
   -webkit-animation: fade-in ease-in 1.3s, slide-right ease var(--connect-icon-enter-time);
@@ -292,15 +280,15 @@ span {
   -moz-fill-mode: forwards;
 }
 
-.connect-icon-svg {
+#connect-icon-svg {
   transition: fill 2s ease-out; /* Not working?? */
   cursor: pointer;
 }
 
-.connect-icon-svg:hover {
+#connect-icon-svg:hover {
   fill: var(--color-accent);
 }
-.connect-icon-svg:hover path{
+#connect-icon-svg:hover path{
   fill: var(--text-color);
 }
 /* ??? */
@@ -332,9 +320,6 @@ span {
 #about-container {
   width: 100vw;
   height: 100vh;
-  /* top: 10%;
-  left: 15%;
-  position: relative; */
   display: flex; 
   flex-direction: row;
   flex-flow: wrap;
@@ -412,8 +397,7 @@ span {
 }
 
 #skills-header {
-  margin: 0 0 5vw 25vh;
-  padding-top: 0.5em;
+  margin: 0.5em 0 5vw 25vh;
   font-family: 'Source Serif Pro';
   font-size: 5em;
   color: var(--secondary-text-color);
@@ -535,7 +519,7 @@ span {
   align-items: center;
 }
 .project-content {
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .project-name {
@@ -558,7 +542,7 @@ span {
 }
 
 .visit-project {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   color: var(--text-color);
   font-size: 1em;
   font-family: 'Roboto Slab';
@@ -576,4 +560,64 @@ span {
 }
 
 
+#contact-container-wrapper {
+  width: 100vw;
+  height: 100vh;
+  color: var(--secondary-text-color);
+}
 
+#contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-header {
+  margin: 0.5em 0 5vw 25vh;
+  font-family: 'Source Serif Pro';
+  font-size: 5em;
+}
+
+#contact-content {
+  margin-left: 25vh;
+  width: 15vw;
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Serif Pro';
+  font-size: 2em;
+}
+
+#contact-content a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#email {
+  width: 12.5vw;
+}
+
+#phone {
+  width: 9vw;
+}
+
+#contact-icons-container {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contact-icons-container a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.contact-icon {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.contact-icon:hover {
+  color: #444;
+  transition: 0.3s;
+}

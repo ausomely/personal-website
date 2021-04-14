@@ -6,6 +6,7 @@ import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
+import Contact from './components/contact';
 
 export default function App() {
 
@@ -17,6 +18,7 @@ export default function App() {
             <About/>
             <Skills/>
             <Portfolio/>
+            <Contact/>
         </div>
     );
 }
