@@ -21,7 +21,7 @@ export default class PortfolioElement extends Component {
                             <div className='project-name'>{name}</div>
                             <p className='project-description'>{description}</p>
                         </div>
-                        <p className='visit-project'> Visit Project <FaLongArrowAltRight id='right-arrow' /></p>
+                        <p className='visit-project'> View Project <FaLongArrowAltRight id='right-arrow' /></p>
                     </div>
                 </a>
             </div>
