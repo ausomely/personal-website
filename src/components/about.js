@@ -2,6 +2,7 @@ import React from 'react';
 import me from '../images/me.jpg';
 import resume from '../resume/JACKIE_AU_PLAIN.pdf';
 
+
 export default function About() {
 
     return(
