@@ -10,19 +10,24 @@ import Contact from './components/contact';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+
 Aos.init();
 
-export default function App() {
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
+export default function App() {
     return (
         <div className = 'App'> 
             <Logo/>
             <Navbar/>
-            <Home/>
+            <Home /> 
             <About/>
             <Skills/>
             <Portfolio/>
             <Contact/>
         </div>
+        
     );
 }
