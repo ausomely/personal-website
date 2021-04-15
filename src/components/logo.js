@@ -4,7 +4,7 @@ export default class Logo extends React.Component {
 
     render() {
         return(
-            <a id='main-icon' href='http://localhost:3000/' draggable='false'>
+            <a id='main-icon' href='http://ausomely.github.io/personal-website/' draggable='false'>
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="29.2743" y="29.9847" width="10.6066" height="1.27279" transform="rotate(-45 29.2743 29.9847)" fill="#C5C3C1"/>
                     <path d="M21.6375 37.6215L29.1375 30.1215L30.0375 31.0215L22.5375 38.5215L21.6375 37.6215Z" fill="#C5C3C1"/>
