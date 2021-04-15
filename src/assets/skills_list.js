@@ -24,7 +24,7 @@ const skill_list = [
     {
         icon: FaPython,
         name: 'Python 3'
-    },
+    }
 ];
 
 export default skill_list;

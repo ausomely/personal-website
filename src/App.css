@@ -366,19 +366,19 @@ span {
 /* Skills */ 
 
 #skills-container-wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-#skills-container {
   background-color: var(--dark-bg);
 }
 
+#skills-container {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
 #skills-header {
-  margin: 0.5em 0 5vw 25vh;
+  margin: 0.5em 0 1em 25vh;
   font-family: 'Source Serif Pro';
   font-size: 5em;
   color: var(--secondary-text-color);
@@ -421,6 +421,67 @@ span {
   color: var(--color-accent);
   transition: 0.3s;
 } */
+
+/* Passions */
+
+#passion-container-wrapper {
+  background-color: var(--dark-bg);
+}
+
+#passion-container {
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#passion-header {
+  margin: 0 0 1em 25vh;
+  font-family: 'Source Serif Pro';
+  font-size: 5em;
+  color: var(--secondary-text-color);
+}
+
+#passion-map {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.passion-element {
+  width: 30em;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passion-icon {
+  width: 15em;
+  height: 15em;
+  background-color: #121212;
+  color: var(--color-accent-opaque);
+  
+}
+
+.passion-title {
+  margin: 0.5em 0;
+  font-family: 'Source Serif Pro';
+  font-size: 2.5em;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.passion-description {
+  font-family: 'Harmattan';
+  font-size: 2em;
+  color: var(--secondary-text-color);
+
+}
 
 /* Portfolio */ 
 

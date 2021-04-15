@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
+import Passions from './components/passions';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Aos from 'aos';
@@ -25,6 +26,7 @@ export default function App() {
             <Home /> 
             <About/>
             <Skills/>
+            <Passions/>
             <Portfolio/>
             <Contact/>
         </div>
