@@ -5,9 +5,9 @@ import portfolio_list from '../assets/portfolio_list';
 export default function Portfolio() {
     return(
         <div id='portfolio-container-wrapper'>
-            <div id='portfolio-header'>Portfolio</div>
+            <div id='portfolio-header' data-aos='fade-up' data-aos-duration='1300' data-aos-once='true'>Portfolio</div>
             <div id='portfolio-container'>
-                <div id='projects-map'>
+                <div id='projects-map' data-aos='fade-up' data-aos-duration='1300' data-aos-once='true'>
                     {
                         portfolio_list.map((project, index) => {
                             return (

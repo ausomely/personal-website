@@ -47,31 +47,9 @@
   opacity: 0;
 }
 
-.fade-slide-up > * {
-  animation: fade-enter-up ease var(--reveal-time) var(--reveal-offset);
-  animation-fill-mode: forwards;
-  -webkit-fill-mode: forwards;
-  -moz-fill-mode: forwards;
-}
-
-.fade-slide-right > * {
-  animation: fade-enter-right ease var(--reveal-time) var(--reveal-offset);
-  animation-fill-mode: forwards;
-  -webkit-fill-mode: forwards;
-  -moz-fill-mode: forwards;
-}
-
-.fade-slide-left > * {
-  animation: fade-enter-left var(--reveal-time) var(--reveal-offset);
-  animation-fill-mode: forwards;
-  -webkit-fill-mode: forwards;
-  -moz-fill-mode: forwards;
-}
-
 .fade-enter {
   animation: fade-in ease 0.5s;
 }
-
 
 /* Keyframes */ 
 @keyframes fade-enter-up{
