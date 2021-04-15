@@ -318,7 +318,7 @@ span {
 #about-header {
   margin-bottom: 1.5vh;
   font-family: 'Source Serif Pro';
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 400;
   color: var(--text-color);
 }
@@ -327,7 +327,7 @@ span {
   width: 20vw;
   font-family: 'Roboto Slab';
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.5em
 }
 
 #about-picture {
@@ -511,7 +511,7 @@ span {
   margin-bottom: 0.5em;
   padding-top: 0.5em;
   font-family: 'Source Serif Pro';
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
   color: var(--text-color);
 }
@@ -650,7 +650,7 @@ span {
 #contact-header {
   margin: 0.5em 0 5vw 25vh;
   font-family: 'Source Serif Pro';
-  font-size: 5em;
+  font-size: 6em;
 }
 
 #contact-content {
@@ -660,7 +660,7 @@ span {
   display: flex;
   flex-direction: column;
   font-family: 'Source Serif Pro';
-  font-size: 2em;
+  font-size: 3em;
 }
 
 #contact-content a {
@@ -708,3 +708,6 @@ span {
   color: #444;
   transition: 0.3s;
 }
+
+/* Media Queries */ 
+
