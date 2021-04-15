@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4c34224.chunk.css",
+    "main.js": "/static/js/main.7910a45a.chunk.js",
+    "main.js.map": "/static/js/main.7910a45a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e014a4b8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e014a4b8.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.84b4e794.chunk.js": "/static/js/2.84b4e794.chunk.js",
+    "static/js/2.84b4e794.chunk.js.map": "/static/js/2.84b4e794.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ae9e5f60.chunk.css.map": "/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.e4c34224.chunk.css.map": "/static/css/main.e4c34224.chunk.css.map",
+    "static/js/2.84b4e794.chunk.js.LICENSE.txt": "/static/js/2.84b4e794.chunk.js.LICENSE.txt",
+    "static/media/JACKIE_AU_PLAIN.d30c3453.pdf": "/static/media/JACKIE_AU_PLAIN.d30c3453.pdf",
+    "static/media/davis-deals-rs.80cf0821.png": "/static/media/davis-deals-rs.80cf0821.png",
+    "static/media/game-room-rs.95f39219.png": "/static/media/game-room-rs.95f39219.png",
+    "static/media/me.e132b65d.jpg": "/static/media/me.e132b65d.jpg",
+    "static/media/personal-website.2b88057c.png": "/static/media/personal-website.2b88057c.png",
+    "static/media/pong-rs.fb279910.png": "/static/media/pong-rs.fb279910.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e014a4b8.js",
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.84b4e794.chunk.js",
+    "static/css/main.e4c34224.chunk.css",
+    "static/js/main.7910a45a.chunk.js"
+  ]
+}
