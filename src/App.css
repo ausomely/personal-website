@@ -149,6 +149,7 @@
   z-index: 1;
   top: 0;
   position: fixed;
+  display: block;
   animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
   -webkit-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
   -moz-animation: fade-in ease 2s, navbar-slide-down ease var(--navbar-enter-time);
@@ -777,27 +778,12 @@ span {
   }
 }
 
-/* (768x1024) iPad 1 & 2, Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* insert styles here */
-}
-
-/* (1024x768) iPad 1 & 2, Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* insert styles here */
-}
-
-/* (2048x1536) iPad 3 */
-@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
-  /* insert styles here */
-}
-
-/* (320x480) iPhone (Original, 3G, 3GS) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+/* iPhone 6, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  /* Styles */
   #main-icon {
     left: 5%;
   }
-
   #element-container {
     margin: 2em 7em 0 auto;
   }
@@ -806,38 +792,26 @@ span {
     font-size: 0.9em;
     padding-right: 0.5em;
   }
-  #home-container {
-    width: 100vw;
-    top: 45%;
-    left: 10%;
+
+  #navbar-container {
+    display: block;
   }
+
+  #home-container {
+    margin: auto;
+    width: 65%;
+    top: 35%;
+    left: 0;
+    align-items: center;
+  }
+
   #home-title {
-    width: 65vw;
+    width: 55vw;
     font-size: 3em;
   }
 
   #home-description {
-    width: 50vw;
+    width: 46vw;
     font-size: 0.7em;
   }
-}
-
-/* (320x480) Smartphone, Portrait */
-@media only screen and (device-width: 320px) and (orientation: portrait) {
-  /* insert styles here */
-}
-
-/* (320x480) Smartphone, Landscape */
-@media only screen and (device-width: 480px) and (orientation: landscape) {
-  /* insert styles here */
-}
-
-/* (480x800) Android */
-@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
-  /* insert styles here */
-}
-
-/* (640x960) iPhone 4 & 4S */
-@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
-  /* insert styles here */
 }
