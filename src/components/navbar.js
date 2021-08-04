@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import resume from '../resume/JACKIE_AU_PLAIN.pdf';
 import { Link } from 'react-scroll';
 
+
 var prevPageOffset = window.pageYOffset;
 window.onscroll = function() {
     var currentPageOffset = window.pageYOffset;

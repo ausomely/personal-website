@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Logo from './components/logo';
 import Navbar from './components/navbar';
+import NavbarHome from './components/navbar-home';
 import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
@@ -23,6 +24,7 @@ export default function App() {
         <div className = 'App'> 
             <Logo/>
             <Navbar/>
+            <NavbarHome/>
             <Home /> 
             <About/>
             <Skills/>
