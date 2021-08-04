@@ -287,9 +287,9 @@
 
 .menu-wrap .menu > div {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
+  /* border-radius: 50%; */
+  width: 300vw;
+  height: 300vw;
   display: flex;
   flex: none;
   align-items: center;
