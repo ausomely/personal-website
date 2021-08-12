@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import resume from '../resume/JACKIE_AU_PLAIN.pdf';
+import resume from '../resume/JACKIE_AU.pdf';
 import { Link } from 'react-scroll';
 
 

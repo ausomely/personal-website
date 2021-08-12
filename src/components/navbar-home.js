@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-import resume from '../resume/JACKIE_AU_PLAIN.pdf';
+import resume from '../resume/JACKIE_AU.pdf';
 
 export default class NavbarHome extends Component {
     render() {

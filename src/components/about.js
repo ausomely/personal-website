@@ -1,7 +1,8 @@
 import React from 'react';
 import me from '../images/me.jpg';
-import resume from '../resume/JACKIE_AU_PLAIN.pdf';
+import resume from '../resume/JACKIE_AU.pdf';
 
+// iPhone 6,7,8 media query, remove animation //useRef(null)
 
 export default function About() {
 
