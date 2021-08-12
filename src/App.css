@@ -183,9 +183,10 @@
 }
 
 .menu-wrap {
-  z-index: 1;
+  z-index: 2;
   top: 1%;
-  right: 15%;
+  right: 25%;
+  display: none;
   position: fixed;
 }
 
@@ -288,7 +289,7 @@
 .menu-wrap .menu > div {
   background-color: rgba(0, 0, 0, 0.5);
   /* border-radius: 50%; */
-  width: 300vw;
+  /* width: 300vw; */
   height: 300vw;
   display: flex;
   flex: none;
@@ -301,7 +302,7 @@
 
 .menu-wrap .menu > div > div {
   text-align: center;
-  max-width: 90vw;
+  /* max-width: 100vh; */
   max-height: 100vh;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -924,34 +925,126 @@ span {
   #main-icon {
     left: 5%;
   }
-  #element-container {
-    margin: 2em 7em 0 auto;
-  }
-
-  .navbar-element {
-    font-size: 0.9em;
-    padding-right: 0.5em;
-  }
 
   #navbar-container {
-    display: block;
+    display: none;
   }
 
+  .menu-wrap {
+    display: block;
+  }
+  /* Home */
   #home-container {
     margin: auto;
-    width: 65%;
+    width: 70%;
     top: 35%;
     left: 0;
     align-items: center;
+    text-align: center;
   }
 
   #home-title {
-    width: 55vw;
-    font-size: 3em;
+    width: 70vw;
+    font-size: 3.5em;
   }
 
   #home-description {
-    width: 46vw;
-    font-size: 0.7em;
+    width: 70vw;
+    font-size: 1em;
   }
+
+  /* About */
+  #about-container {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  #about-content {
+    margin: 0;
+  }
+
+  #about-header {
+    display: none;
+  }
+
+  #about-paragraph {
+    padding-top: 1em;
+    font-size: 0.7em;
+    width: 80vw;
+  }
+
+  #about-picture {
+    width: 80vw;
+  }
+
+  #download-resume {
+    padding: 0;
+    left: 10%;
+  }
+
+  /* Skills */
+
+  #skills-container {
+    height: 85vh;
+  }
+
+  #skills-header {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #skills-map {
+    flex-flow: row wrap;
+  }
+  
+  .skills-icon {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .skills-name {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+
+  /* Passions */
+
+  #passion-container {
+    height: 160vh;
+  }
+
+  #passion-header {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #passion-map {
+
+  }
+
+  .passion-element {
+    height: 20em;
+  }
+
+  .passion-icon {
+    width: 8em;
+    height: 8em;
+  }
+
+  .passion-title {
+    font-size: 1.5em;
+  }
+
+  .passion-description {
+    font-size: 1.15em;
+  }
+
+  /* Portfolio */
+
+  #portfolio-header {
+    font-size: 2.5em;
+  }
+
 }
