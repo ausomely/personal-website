@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-import { FaBars } from 'react-icons/fa';
 
 export default class NavbarHome extends Component {
     render() {
