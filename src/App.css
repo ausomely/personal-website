@@ -287,7 +287,7 @@
 }
 
 .menu-wrap .menu > div {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(16,16,16);
   /* border-radius: 50%; */
   width: 100vw;
   height: 100vh;
@@ -295,7 +295,7 @@
   flex: none;
   align-items: center;
   justify-content: center;
-  opacity: 0.8;
+  opacity: 0.95;
   transform: scale(0);
   transition: all 0.4s ease;
 }
@@ -312,7 +312,7 @@
   list-style: none;
   color: #fff;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .menu-wrap .menu > div > div > ul > li> a {
@@ -933,8 +933,14 @@ span {
     left: 5%;
   }
 
+  /* Navbar */
   #navbar-container {
     display: none;
+  }
+
+  .navbar-element {
+    font-size: 1em;
+    color: #fff;
   }
 
   .menu-wrap {
@@ -1028,12 +1034,16 @@ span {
   }
 
   #passion-map {
-
   }
 
   .passion-element {
     height: 20em;
+    padding-bottom: 2em;
   }
+  .passion-element:nth-child(1) {
+    height: 15em;
+  }
+  
 
   .passion-icon {
     width: 8em;
