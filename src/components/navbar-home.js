@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import resume from '../resume/JACKIE_AU.pdf';
 
+
+// document.onclick = function(e) {
+//     if (e.target.className === 'navbar-element') {
+//         console.log(e.target);
+//         document.getElementsByClassName('menu-wrap')[0].style.visibility = 'hidden';
+//     }
+// };
+
 export default class NavbarHome extends Component {
     render() {
         return(
-            <div className="menu-wrap">
+            <div className="menu-wrap" id="hamburger-menu">
                 <input type="checkbox" className="toggler" />
                 <div className="hamburger">
                     <div></div>

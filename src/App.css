@@ -923,12 +923,11 @@ span {
 /* iPhone 6, 7, 8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
   /* Styles */
-  html {
+  html, body {
+    width: 375px;
     overflow-x: hidden !important;
   }
-  body {
-    overflow-x: hidden !important;
-  }
+
   #main-icon {
     left: 5%;
   }
@@ -946,6 +945,7 @@ span {
   .menu-wrap {
     display: block;
   }
+
   /* Home */
   #home-container {
     margin: auto;
@@ -1033,9 +1033,6 @@ span {
     font-size: 2.5em;
   }
 
-  #passion-map {
-  }
-
   .passion-element {
     height: 20em;
     padding-bottom: 2em;
@@ -1099,6 +1096,220 @@ span {
     display: none;
   }
   
+  #right-arrow {
+    display: none;
+  }
+
+  /* Contact */
+
+  #contact-container-wrapper {
+    height: 45vh;
+  }
+
+  #contact-header {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 3.2em;
+  }
+
+  #contact-content {
+    margin: 0.5em 0.5em;
+    font-size: 1.5em;
+    width: inherit; 
+  }
+
+  #email {
+    text-align: center;
+    width: inherit;
+  }
+
+  #phone {
+    text-align: center;
+    width: inherit;
+  }
+
+  #contact-icons-container {
+    justify-content: center;
+    width: inherit;
+  }
+}
+
+/* iPhone 6, 7, 8 Plus */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  /* Styles */
+  html, body {
+    width: 414px;
+    overflow-x: hidden !important;
+  }
+
+  #main-icon {
+    left: 10%;
+  }
+
+  /* Navbar */
+  #navbar-container {
+    display: none;
+  }
+
+  .navbar-element {
+    font-size: 1em;
+    color: #fff;
+  }
+
+  .menu-wrap {
+    display: block;
+    right: 22%;
+  }
+
+  /* Home */
+  #home-container {
+    margin: auto;
+    width: 80%;
+    top: 35%;
+    left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home-title {
+    width: 90vw;
+    font-size: 4.5em;
+  }
+
+  #home-description {
+    width: 90vw;
+    font-size: 1.2em;
+  }
+
+  /* About */
+  #about-container {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  #about-content {
+    margin: 0;
+  }
+
+  #about-header {
+    display: none;
+  }
+
+  #about-paragraph {
+    padding-top: 1em;
+    font-size: 0.7em;
+    width: 80vw;
+  }
+
+  #about-picture {
+    width: 80vw;
+  }
+
+  #download-resume {
+    padding: 0;
+    left: 18%;
+  }
+
+  /* Skills */
+
+  #skills-container {
+    height: 80vh;
+  }
+
+  #skills-header {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #skills-map {
+    flex-flow: row wrap;
+  }
+
+  .skills-icon {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .skills-name {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+
+  /* Passions */
+
+  #passion-container {
+    height: 145vh;
+  }
+
+  #passion-header {
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .passion-element {
+    height: 20em;
+    padding-bottom: 2em;
+  }
+  .passion-element:nth-child(1) {
+    height: 15em;
+  }
+
+  .passion-icon {
+    width: 8em;
+    height: 8em;
+  }
+
+  .passion-title {
+    font-size: 1.5em;
+  }
+
+  .passion-description {
+    font-size: 1.15em;
+  }
+
+  /* Portfolio */
+
+  #portfolio-header {
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    font-size: 2.5em;
+  }
+
+  #projects-map {
+    padding: 0;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: start;
+  }
+
+  .project-element:nth-child(2n) {
+    transform: translate(0, 0);
+  }
+  .project-element {
+    width: 40vw;
+    height: 35vh;
+    margin: 1em;
+  }
+  .project-content {
+    margin: 2em;
+  }
+
+  .project-name {
+    width: inherit;
+    font-size: 1.5em;
+  } 
+
+  .project-description {
+    width: inherit;
+    font-size: 1em;
+  }
+
+  .visit-project {
+    display: none;
+  }
+
   #right-arrow {
     display: none;
   }
