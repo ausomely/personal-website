@@ -1425,7 +1425,7 @@ span {
   /* Skills */
 
   #skills-container {
-    height: 85vh;
+    height: 35em;
   }
 
   #skills-header {
@@ -1451,7 +1451,7 @@ span {
   /* Passions */
 
   #passion-container {
-    height: 150vh;
+    height: 70em;
   }
 
   #passion-header {
@@ -1559,5 +1559,4 @@ span {
     justify-content: center;
     width: inherit;
   }
-
 }
