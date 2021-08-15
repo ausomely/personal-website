@@ -3,12 +3,9 @@ import { Link } from 'react-scroll';
 import resume from '../resume/JACKIE_AU.pdf';
 
 
-// document.onclick = function(e) {
-//     if (e.target.className === 'navbar-element') {
-//         console.log(e.target);
-//         document.getElementsByClassName('menu-wrap')[0].style.visibility = 'hidden';
-//     }
-// };
+const closeOverlay = function() {
+    document.getElementsByClassName('toggler')[0].checked = false;
+};
 
 export default class NavbarHome extends Component {
     render() {
@@ -31,7 +28,7 @@ export default class NavbarHome extends Component {
                                     offset={0}
                                     duration={1000}
                                 >
-                                    <div className='navbar-element'>ABOUT</div>
+                                    <div className='navbar-element' onClick={closeOverlay}>ABOUT</div>
                                 </Link></li>
                                 <li><a className='navbar-element' href = {resume} 
                                     target='_blank' rel='noreferrer'>RESUME</a></li>
@@ -42,7 +39,7 @@ export default class NavbarHome extends Component {
                                     offset={0}
                                     duration={1000}
                                 >
-                                    <div className='navbar-element'>SKILLS</div>
+                                    <div className='navbar-element' onClick={closeOverlay}>SKILLS</div>
                                 </Link></li>
                                 <li><Link
                                     to='portfolio-container-wrapper'
@@ -51,7 +48,7 @@ export default class NavbarHome extends Component {
                                     offset={0}
                                     duration={1000}
                                 >
-                                    <div className='navbar-element'>PORTFOLIO</div>
+                                    <div className='navbar-element' onClick={closeOverlay}>PORTFOLIO</div>
                                 </Link></li>
                                 <li><Link
                                     to='contact-container-wrapper'
@@ -60,7 +57,7 @@ export default class NavbarHome extends Component {
                                     offset={0}
                                     duration={1000}
                                 >
-                                    <div className='navbar-element'>CONTACT</div>
+                                    <div className='navbar-element' onClick={closeOverlay}>CONTACT</div>
                                 </Link></li>
                             </ul>
                         </div>
